@@ -5,8 +5,9 @@ services:
     ports:
       - 5434:5432
     environment:
-      POSTGRES_USER: kenji
+      POSTGRES_ALLOW_EMPTY_PASSWORD: 'yes'
       POSTGRES_PASSWORD: password
+      POSTGRES_USER: user
       POSTGRES_DB: t3db
     restart: always
     networks:
